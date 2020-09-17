@@ -5,8 +5,4 @@
 
 ## Sem 5
 
-1. [Internet of things]()
-
----
-
-### IOT - Internet Of Things - Sem 5
+1. [Internet of things](https://github.com/shaansubbaiah/CSE-3rd-Year-Labs/tree/master/IOT)
