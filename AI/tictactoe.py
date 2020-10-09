@@ -117,9 +117,9 @@ for j in range(1, 10):
 
     if hasWon[0] == 1:
         print(board)
-        if(hasWon[1] == 1):
+        if hasWon[1] == 1:
             print("HUMAN WINS")
-        else
+        else:
             print("AI WINS")
         exit(1)
 
