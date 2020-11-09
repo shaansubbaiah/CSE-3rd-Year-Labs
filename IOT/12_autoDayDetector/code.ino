@@ -1,23 +1,21 @@
 // Shaan Subbaiah - 1BM18CS096
-// Gas Detection
+// Vibration on daylight
 
 void setup()
 {
-  pinMode(13, OUTPUT);
-  pinMode(A0, INPUT);
-  
+  pinMode(6, OUTPUT);
   Serial.begin(9600);
 }
 
 void loop()
 {
-  float gasVal = analogRead(A0);
+  int lightVal = analogRead(A0);
   
-  if(gasVal > 200)
-    digitalWrite(13, HIGH);
+  Serial.println(lightVal);
+  if(lightVal >= 200)
+  	analogWrite(6, 255);
   else
-    digitalWrite(13, LOW);
+    analogWrite(6, 0);
   
-  Serial.println((String)"Gas value: "+gasVal);
-  delay(1000);
+  delay(300);
 }
