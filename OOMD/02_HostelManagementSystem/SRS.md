@@ -1,4 +1,4 @@
-# 1. Hostel Management System
+# 2. Hostel Management System
 
 ## 1.1 Problem statement
 
