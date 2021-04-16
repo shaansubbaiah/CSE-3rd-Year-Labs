@@ -1,10 +1,10 @@
 # 3. Inventory Maintenance System
 
-## 3.1 Problem Statement:-
+## 3.1 Problem Statement
 
 - The purpose of the system is to check and maintain the inventory, view sales and stock reports.
 
-## 3.2 System Requirements Specifications:-
+## 3.2 System Requirements Specifications
 
 ### Functional Requirements:
 
