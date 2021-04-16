@@ -1,10 +1,10 @@
 # 2. Hostel Management System
 
-## 1.1 Problem statement
+## 2.1 Problem statement
 
 - The purpose of the system is to carry out different operations of a hostel. This system will computerize all work such as managing student and staff records to provide ease and comfort of use to the staff of hostel.
 
-## 1.2 Software Requirement Specification
+## 2.2 Software Requirement Specification
 
 ### Functional Requirements:
 
