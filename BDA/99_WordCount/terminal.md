@@ -1,35 +1,44 @@
 hadoop@ubuntuVM:~$ cd Downloads
 
 hadoop@ubuntuVM:~/Downloads$ ls
-hadoop-core-0.20.2.jar  mywordcount.jar
+
+`hadoop-core-0.20.2.jar  mywordcount.jar`
 
 hadoop@ubuntuVM:~/Downloads$ touch input.txt
 
 hadoop@ubuntuVM:~/Downloads$ ls
-hadoop-core-0.20.2.jar  input.txt  mywordcount.jar
+
+`hadoop-core-0.20.2.jar  input.txt  mywordcount.jar`
 
 hadoop@ubuntuVM:~/Downloads$ nano input.txt
 
 hadoop@ubuntuVM:~/Downloads$ cat input.txt 
+```
 okay lmao nice
 cool okay lmao
 nice cool cool
 rip lmao rip
 okay cool cool
+```
 
 hadoop@ubuntuVM:~/Downloads$ hadoop fs -mkdir /input
 
 hadoop@ubuntuVM:~/Downloads$ hadoop fs -ls /
+```
 Found 1 items
 drwxr-xr-x   - hadoop supergroup          0 2021-04-29 10:46 /input
+```
 
 hadoop@ubuntuVM:~/Downloads$ hadoop fs -put ~/Downloads/input.txt /input/input.txt
 
 hadoop@ubuntuVM:~/Downloads$ hadoop fs -ls /input
+```
 Found 1 items
 -rw-r--r--   1 hadoop supergroup         73 2021-04-29 10:47 /input/input.txt
+```
 
 hadoop@ubuntuVM:~/Downloads$ hadoop jar mywordcount.jar WordCount /input/input.txt output
+```
 2021-04-29 10:51:49,443 INFO client.RMProxy: Connecting to ResourceManager at /127.0.0.1:8032
 2021-04-29 10:51:50,504 WARN mapreduce.JobResourceUploader: Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
 2021-04-29 10:51:50,540 INFO mapreduce.JobResourceUploader: Disabling Erasure Coding for path: /tmp/hadoop-yarn/staging/hadoop/.staging/job_1619673100611_0001
@@ -108,16 +117,21 @@ hadoop@ubuntuVM:~/Downloads$ hadoop jar mywordcount.jar WordCount /input/input.t
 		Bytes Read=73
 	File Output Format Counters 
 		Bytes Written=34
+```
 
 hadoop@ubuntuVM:~/Downloads$ hadoop fs -ls /user/hadoop/output
+```
 Found 2 items
 -rw-r--r--   1 hadoop supergroup          0 2021-04-29 10:52 /user/hadoop/output.txt/_SUCCESS
 -rw-r--r--   1 hadoop supergroup         34 2021-04-29 10:52 /user/hadoop/output.txt/part-r-00000
+```
 
 hadoop@ubuntuVM:~/Downloads$ hadoop fs -cat /user/hadoop/output/part-r-00000 
+```
 cool	5
 lmao	3
 nice	2
 okay	3
 rip	2
+```
 
