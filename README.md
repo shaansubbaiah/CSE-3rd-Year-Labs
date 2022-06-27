@@ -17,3 +17,13 @@ Shaan Subbaiah B C - 1BM18CS096<br>
 2. [Big Data Analytics (BDA)](https://github.com/shaansubbaiah/CSE-3rd-Year-Labs/tree/master/BDA)
 3. [Object Oriented Modelling and Design (OOMD)](https://github.com/shaansubbaiah/CSE-3rd-Year-Labs/tree/master/OOMD)
 4. [Cryptography and Network Security (CNS)](https://github.com/shaansubbaiah/CSE-3rd-Year-Labs/tree/master/CNS)
+
+
+---
+
+<div align="center">
+<br><br>
+<h3>  1200+ views lmao. </h3>
+<h4> Y'all must have had some tests, good luck. </h4>
+<img src="./_extra/traffic_screen.jpg" alt="github traffic screenshot" width="600px">
+</div>
